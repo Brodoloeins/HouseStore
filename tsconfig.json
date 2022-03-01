@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
-    "lib": ["esnext"],
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Projects */

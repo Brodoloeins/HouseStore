@@ -1,18 +1,5 @@
-import { Router } from 'express';
-import { CreateUser } from './User/CreateUser';
-import { celebrate, Joi, Segments } from 'celebrate';
+import { Router } from "express";
 
-const routes = Router();
-const createUser = new CreateUser();
+export const routes = Router()
 
-routes.post('/create', 
-    celebrate({
-        [Segments.BODY]: {
-            email: Joi.string().required(),
-            name: Joi.string().required(),
-            password: Joi.string().required()
-        }
-    })
-, createUser.execute)
-
-export { routes }
+routes.get('/')
